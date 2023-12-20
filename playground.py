@@ -1,4 +1,3 @@
-import os
 import smtplib
 import alpaca_trade_api as tradeapi
 import yfinance as yf
