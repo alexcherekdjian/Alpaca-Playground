@@ -6,10 +6,10 @@ from colorama import Fore
 RUN_SETUP = False
 CLOSE_ALL = False
 
-startBal = 100000
+startBal = 30000
 
-SEC_KEY = 'HtcO77NCJFynyW2DnbJqoaEpkPSJ113KO9RsJQ6J'
-PUB_KEY = 'PKLS9W8PJDB1QUZVB4EQ'
+SEC_KEY = 'ezbK6z0qjSbdhfJq2apfHsOsXIMeAxR1yYTQiCDQ'
+PUB_KEY = 'PKRVSW2AUE58OE6MOLGH'
 BASE_URL = 'https://paper-api.alpaca.markets'
 
 companies_symb = ['AAPL', 'MSFT', 'AMZN', 'NVDA', 'GOOGL', 'META', 'GOOG', 'TSLA', 'NFLX',
@@ -230,3 +230,11 @@ def main():
 api = tradeapi.REST(key_id= PUB_KEY, secret_key=SEC_KEY, base_url=BASE_URL, api_version='v2')
 
 main()
+
+# from apscheduler.schedulers.blocking import BlockingScheduler
+# scheduler = BlockingScheduler()
+# scheduler.add_job(main, trigger='cron', day_of_week='mon-fri', hour='9', timezone='US/Eastern')
+# print("started")
+# scheduler.start()
+
+print("at end")
